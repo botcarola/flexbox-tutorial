@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>        
+        <nav>
+            <ul class="navegacion">
+                <li>
+                    <a href="#direction">
+                        flex-direction
+                    </a>
+                </li>
+                <li>
+                    <a href="#wrap">
+                        flex-wrap
+                    </a>
+                </li>
+                <li>
+                    <a href="#jcontent">
+                        justify-content
+                    </a>
+                </li>
+                <li>
+                    <a href="#aitems">
+                        align-items
+                    </a>
+                </li>
+                <li>
+                    <a href="#fgrow">
+                        flex-grow
+                    </a>
+                </li>            
+            </ul>
+        </nav>
+        <h1>
+            flexbox tutorial
+        </h1>
+        <section class="container-img-header">               
+            <article class="img-header">
+                <img src="./assets/html-class.png" alt="ejemplo html y clase" />
+            </article>
+            <article class="img-header">
+                <img src="./assets/flex.png" alt="contenedor flex" />                       
+            </article>
+        </section>        
+    </header>
+    <main>
+        <section class="container espaciado">
+            <h2>
+                <a name="direction">
+                    flex-direction: configura el eje principal
+                </a>
+            </h2>
+            <div class="container-cajas" id="f-direction">
+                <div class="caja">
+                    1
+                </div>
+                <div class="caja">
+                    2                    
+                </div>
+                <div class="caja">
+                    3                    
+                </div>                
+            </div>
+            <div class="buttons">
+                <button type="button" id="b-row">
+                    row
+                </button>
+                <button type="button" id="b-rreverse">
+                    row-reverse
+                </button>
+                <button type="button" id="b-column">
+                    column
+                </button>
+                <button type="button" id="b-creverse">
+                    column-reverse
+                </button>
+            </div>
+        </section>
+        <section class="container espaciado">
+            <h2>
+                <a name="wrap">
+                    flex-wrap: permite especificar si los elementos pueden tener un cambio de línea
+                </a>
+            </h2>
+            <div class="container-cajas container-wrap">
+                <div class="caja">
+                    1
+                </div>
+                <div class="caja">
+                    2                    
+                </div>
+                <div class="caja">
+                    3                    
+                </div>
+                <div class="caja">
+                    4                    
+                </div> 
+                <div class="caja">
+                    5                    
+                </div>   
+                <div class="caja">
+                    6                    
+                </div> 
+                <div class="caja">
+                    7                    
+                </div> 
+                <div class="caja">
+                    8                    
+                </div> 
+                <div class="caja">
+                    9                    
+                </div>               
+                <div class="caja">
+                    10                    
+                </div> 
+                <div class="caja">
+                    11                   
+                </div> 
+                <div class="caja">
+                    12                    
+                </div> 
+            </div>
+            <div class="buttons">
+                <button type="button" id="b-nwrap">
+                    nowrap
+                </button>
+                <button type="button" id="b-wrap">
+                    wrap
+                </button>
+                <button type="button" id="b-wreverse">
+                    wrap-reverse
+                </button>                
+            </div>
+        </section>
+        <section class="container espaciado">
+            <h2>
+                <a name="jcontent">
+                    justify-content: define cómo el navegador distribuye el espacio entre y alrededor de los elementos
+                </a>
+            </h2>
+            <div class="container-cajas container-jcontent">
+                <div class="caja">
+                    1
+                </div>
+                <div class="caja">
+                    2                    
+                </div>
+                <div class="caja">
+                    3                    
+                </div>                
+            </div>
+            <div class="buttons">
+                <button type="button" id="b-fStart">
+                    flex-start
+                </button>
+                <button type="button" id="b-fEnd">
+                    flex-end
+                </button>
+                <button type="button" id="b-center">
+                    center
+                </button>
+                <button type="button" id="b-sBetween">
+                    space-between
+                </button>
+                <button type="button" id="b-sAround">
+                    space-around
+                </button>
+                <button type="button" id="b-sEvenly">
+                    space-evenly
+                </button>
+            </div>
+        </section>
+        <section class="container espaciado">
+            <h2>
+                <a name="aitems">
+                    align-items: indica la alineación de un elementos dentro del bloque que lo contiene
+                </a>
+            </h2>
+            <div class="container-cajas container-aitems">
+                <div class="caja baseline-1">
+                    1
+                </div>
+                <div class="caja baseline-2">
+                    2                    
+                </div>
+                <div class="caja baseline-3">
+                    3                    
+                </div>                
+            </div>
+            <div class="buttons">
+                <button type="button" id="b-aStart">
+                    flex-start
+                </button>
+                <button type="button" id="b-aEnd">
+                    flex-end
+                </button>
+                <button type="button" id="b-aCenter">
+                    center
+                </button>
+                <button type="button" id="b-aStretch">
+                    stretch
+                </button>
+                <button type="button" id="b-aBaseline">
+                    baseline
+                </button>                
+            </div>
+        </section>
+        <section class="container espaciado">
+            <h2>
+                <a name="fgrow">
+                    flex-grow: especifica el factor de crecimiento de un elemento flexible
+                </a>
+            </h2>
+            <div class="container-cajas container-flexgrow">
+                <div class="caja grow">
+                    1
+                </div>
+                <div class="caja grow">
+                    2                    
+                </div>
+                <div class="caja grow">
+                    3                    
+                </div> 
+                <div class="caja grow">
+                    4                    
+                </div>                 
+            </div>
+            <div class="buttons">
+                <button type="button" id="b-fgrow">
+                    flex-grow
+                </button>
+                <button type="button" id="b-reset">
+                    reset
+                </button>              
+            </div>
+        </section>
+    </main>    
+    <script src="index.js"></script>
+</body>
+</html>
